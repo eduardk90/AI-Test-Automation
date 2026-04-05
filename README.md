@@ -1,6 +1,12 @@
 # AI-Test-Automation
 
-A modern test automation framework built with **Playwright** and **AI agents**, designed to validate end-to-end user flows with minimal manual maintenance. This project demonstrates how AI-assisted testing can scale quality assurance across complex web applications.
+A modern test automation framework built with **Playwright** and **GitHub Copilot agents**, designed to validate end-to-end user flows with minimal manual maintenance. This project demonstrates how AI-assisted testing can scale quality assurance across complex web applications.
+
+---
+
+## Screenshot
+
+![Playwright Test Run](./screenshot.png)
 
 ---
 
@@ -22,12 +28,12 @@ This framework automates end-to-end testing of a full e-commerce web application
 
 ## How AI Is Used
 
-This project goes beyond standard Playwright scripting by integrating **AI agents** directly into the testing workflow:
+This project goes beyond standard Playwright scripting by integrating **GitHub Copilot agents** directly into the testing workflow:
 
-- **`.playwright-mcp/`** — MCP (Model Context Protocol) server integration, allowing AI models to interact with the browser programmatically. This enables agents to reason about UI state, generate test actions, and assist in exploratory testing.
+- **`.playwright-mcp/`** — MCP (Model Context Protocol) server integration, allowing Copilot to interact with the browser programmatically. This enables agents to reason about UI state, generate test actions, and assist in exploratory testing.
 - **`agents/`** — Custom agent definitions that can autonomously navigate, interact, and validate application behavior.
 - **`specs/saucedemo-test-plan.md`** — AI-generated test plan used as the source of truth for what scenarios to cover.
-- **`mcp.json`** — Configuration for the MCP server connecting Claude (or other LLMs) to the Playwright browser context.
+- **`mcp.json`** — Configuration for the MCP server connecting GitHub Copilot to the Playwright browser context.
 
 The result: test coverage that is faster to write, easier to extend, and capable of adapting to UI changes with AI assistance.
 
@@ -41,7 +47,7 @@ The result: test coverage that is faster to write, easier to extend, and capable
 | TypeScript | Type-safe test authoring |
 | GitHub Actions | CI/CD pipeline |
 | MCP (Model Context Protocol) | AI-to-browser communication layer |
-| Claude / LLM Agents | Test generation & exploratory assistance |
+| GitHub Copilot | Test generation & exploratory assistance |
 
 ---
 
