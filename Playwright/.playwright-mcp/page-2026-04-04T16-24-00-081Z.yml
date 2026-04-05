@@ -1,0 +1,27 @@
+- generic [ref=e74]:
+  - generic [ref=e75]: Swag Labs
+  - generic [ref=e76]:
+    - generic [ref=e80]:
+      - generic [ref=e81]:
+        - textbox "Username" [ref=e82]: wrong_user
+        - img [ref=e93]
+      - generic [ref=e83]:
+        - textbox "Password" [ref=e84]: wrong_password
+        - img [ref=e95]
+      - 'heading "Epic sadface: Username and password do not match any user in this service" [level=3] [ref=e97]':
+        - button [ref=e98] [cursor=pointer]:
+          - img [ref=e99]
+        - text: "Epic sadface: Username and password do not match any user in this service"
+      - button "Login" [active] [ref=e86] [cursor=pointer]
+    - generic [ref=e88]:
+      - generic [ref=e89]:
+        - heading "Accepted usernames are:" [level=4] [ref=e90]
+        - text: standard_user
+        - text: locked_out_user
+        - text: problem_user
+        - text: performance_glitch_user
+        - text: error_user
+        - text: visual_user
+      - generic [ref=e91]:
+        - heading "Password for all users:" [level=4] [ref=e92]
+        - text: secret_sauce

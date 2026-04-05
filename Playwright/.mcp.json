@@ -1,0 +1,22 @@
+{
+  "mcpServers": {
+    "playwright-test": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "@playwright/test",
+        "run-test-mcp-server"
+      ],
+      "tools": ["*"]
+    },
+    "filesystem": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "/home/edk/Preparation Work/AITestAutomation/Playwright"
+      ]
+    }
+  }
+}
