@@ -45,58 +45,6 @@ The result: test coverage that is faster to write, easier to extend, and capable
 
 ---
 
-## Project Structure
-
-AI-Test-Automation/
-├── .github/
-│   └── workflows/
-│       ├── copilot-setup-steps.yml
-│       └── playwright.yml          # CI pipeline — runs on push/PR to main
-├── Playwright/
-│   ├── .playwright/                # Playwright internal config & cache
-│   ├── .playwright-mcp/            # MCP server for AI-to-browser communication
-│   ├── .vscode/
-│   │   └── mcp.json                # VS Code MCP server configuration
-│   ├── specs/
-│   │   ├── README.md
-│   │   └── saucedemo-test-plan.md  # AI-generated test plan (source of truth)
-│   ├── test-results/               # Raw test output
-│   ├── playwright-report/          # HTML report (uploaded as CI artifact)
-│   ├── tests/
-│   │   ├── helpers/                # Shared utilities and page abstractions
-│   │   ├── 01-successful-login-with-valid-credentials.spec.ts
-│   │   ├── 02-login-blocked-for-locked-out-user.spec.ts
-│   │   ├── 03-login-validation-with-blank-username-and-password.spec.ts
-│   │   ├── 04-inventory-page-shows-core-controls-after-login.spec.ts
-│   │   ├── 05-sort-products-by-name-a-to-z.spec.ts
-│   │   ├── 06-sort-products-by-name-z-to-a.spec.ts
-│   │   ├── 07-sort-products-by-price-low-to-high.spec.ts
-│   │   ├── 08-sort-products-by-price-high-to-low.spec.ts
-│   │   ├── 09-add-a-single-product-to-cart-from-inventory.spec.ts
-│   │   ├── 10-add-multiple-products-to-cart.spec.ts
-│   │   ├── 11-remove-a-product-from-inventory-page.spec.ts
-│   │   ├── 12-remove-a-product-from-cart-page.spec.ts
-│   │   ├── 13-open-product-detail-page-and-verify-product-info.spec.ts
-│   │   ├── 14-add-product-to-cart-from-product-detail-page.spec.ts
-│   │   ├── 15-start-checkout-with-items-in-cart.spec.ts
-│   │   ├── 16-checkout-validation-with-all-fields-blank.spec.ts
-│   │   ├── 17-checkout-validation-when-postal-code-is-missing.spec.ts
-│   │   ├── 18-complete-checkout-successfully.spec.ts
-│   │   ├── 19-cancel-checkout-from-information-page.spec.ts
-│   │   ├── 20-logout-from-side-menu.spec.ts
-│   │   ├── 21-cart-state-persists-during-in-session-navigation.spec.ts
-│   │   └── 22-browser-back-navigation-does-not-break-app-state.spec.ts
-│   ├── .gitignore
-│   ├── mcp.json
-│   ├── package-lock.json
-│   ├── package.json
-│   └── playwright.config.ts
-├── agents/                         # AI agent definitions
-├── .gitignore
-└── README.md
-
----
-
 ## Running Tests
 ```bash
 # Install dependencies
